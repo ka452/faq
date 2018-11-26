@@ -52,4 +52,24 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+<<<<<<< Updated upstream
+=======
+
+    public function profile()
+    {
+        return $this->hasOne('App\Profile');
+    }
+
+    public function questions()
+    {
+        return $this->hasMany('App\Question');
+    }
+    public function answers()
+    {
+        return $this->hasMany('App\Answer');
+    }
+
+
+
+>>>>>>> Stashed changes
 }
